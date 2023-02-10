@@ -4,7 +4,7 @@ export const PricingPlan = () => {
     return (
         <div className="container-fluid py-5">
             <div className="container">
-                <div className="border-start border-5 border-primary ps-5 mb-5" style={{ "max-width": "600px" }}>
+                <div className="border-start border-5 border-primary ps-5 mb-5" style={{ "maxWidth": "600px" }}>
                     <h6 className="text-primary text-uppercase">Pricing Plan</h6>
                     <h1 className="display-5 text-uppercase mb-0">Competitive Pricing For Pet Services</h1>
                 </div>
@@ -16,8 +16,8 @@ export const PricingPlan = () => {
                             <div className="text-center bg-primary p-4 mb-2">
                                 <h1 className="display-4 text-white mb-0">
                                     <small className="align-top"
-                                        style={{ "font-size": "22px", "line-height": "45px" }}>$</small>49<small
-                                            className="align-bottom" style={{ "font-size": "16px", "line-height": "40px" }}>/
+                                        style={{ "fontSize": "22px", "lineHeight": "45px" }}>$</small>49<small
+                                            className="align-bottom" style={{ "fontSize": "16px", "lineHeight": "40px" }}>/
                                         Mo</small>
                                 </h1>
                             </div>
@@ -49,8 +49,8 @@ export const PricingPlan = () => {
                             <div className="text-center bg-dark p-4 mb-2">
                                 <h1 className="display-4 text-white mb-0">
                                     <small className="align-top"
-                                        style={{ "font-size": "22px", "line-height": "45px" }}>$</small>99<small
-                                            className="align-bottom" style={{ "font-size": "16px", "line-height": "40px" }}>/
+                                        style={{ "fontSize": "22px", "lineHeight": "45px" }}>$</small>99<small
+                                            className="align-bottom" style={{ "fontSize": "16px", "lineHeight": "40px" }}>/
                                         Mo</small>
                                 </h1>
                             </div>
@@ -82,8 +82,8 @@ export const PricingPlan = () => {
                             <div className="text-center bg-primary p-4 mb-2">
                                 <h1 className="display-4 text-white mb-0">
                                     <small className="align-top"
-                                        style={{ "font-size": "22px", "line-height": "45px" }}>$</small>149<small
-                                            className="align-bottom" style={{ "font-size": "16px", "line-height": "40px" }}>/
+                                        style={{ "fontSize": "22px", "lineHeight": "45px" }}>$</small>149<small
+                                            className="align-bottom" style={{ "fontSize": "16px", "lineHeight": "40px" }}>/
                                         Mo</small>
                                 </h1>
                             </div>

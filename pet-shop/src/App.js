@@ -42,12 +42,12 @@ function App() {
             </div> */}
                     {/* <!-- Video Modal End --> */}
 
-
+                    <Route path='/index' />
                     <Route path="/about" element={<About />} />
                     <Route path="/service" element={<ServicesComponent />} />
                     <Route path="/offer" element={<Offer />} />
-                    <Route path="/products" element={<Products />} />
-                    <Route path="/pricingPlan" element={<PricingPlan />} />
+                    <Route path="/product" element={<Products />} />
+                    <Route path="/price" element={<PricingPlan />} />
                     <Route path="/team" element={<Team />} />
 
                     {/* <!-- Testimonial Start --> */}

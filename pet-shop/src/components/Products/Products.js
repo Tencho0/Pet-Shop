@@ -4,7 +4,7 @@ export const Products = () => {
     return (
         <div className="container-fluid py-5">
             <div className="container">
-                <div className="border-start border-5 border-primary ps-5 mb-5" style={{ "max-width": "600px" }}>
+                <div className="border-start border-5 border-primary ps-5 mb-5" style={{ "maxWidth": "600px" }}>
                     <h6 className="text-primary text-uppercase">Products</h6>
                     <h1 className="display-5 text-uppercase mb-0">Products For Your Best Friends</h1>
                 </div>
