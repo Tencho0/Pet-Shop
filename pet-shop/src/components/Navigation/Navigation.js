@@ -25,7 +25,7 @@ export const Navigation = () => {
                             <Link to="detail" className="dropdown-item">Blog Detail</Link>
                         </div>
                     </div>
-                    <Link to="contact" className="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">Contact <i className="bi bi-arrow-right"></i></Link>
+                    <Link to="/contact" className="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">Contact <i className="bi bi-arrow-right"></i></Link>
                 </div>
             </div>
         </nav>

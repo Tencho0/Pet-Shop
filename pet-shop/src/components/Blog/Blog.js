@@ -24,7 +24,7 @@ export const Blog = () => {
                                         </div>
                                         <h5 className="text-uppercase mb-3">Dolor sit magna rebum clita rebum dolor</h5>
                                         <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor</p>
-                                        <Link className="text-primary text-uppercase" to="">Read More<i className="bi bi-chevron-right"></i></Link>
+                                        <Link className="text-primary text-uppercase" to="/detail">Read More<i className="bi bi-chevron-right"></i></Link>
                                     </div>
                                 </div>
                             </div>
@@ -44,7 +44,7 @@ export const Blog = () => {
                                         </div>
                                         <h5 className="text-uppercase mb-3">Dolor sit magna rebum clita rebum dolor</h5>
                                         <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor</p>
-                                        <Link className="text-primary text-uppercase" to="">Read More<i className="bi bi-chevron-right"></i></Link>
+                                        <Link className="text-primary text-uppercase" to="/detail">Read More<i className="bi bi-chevron-right"></i></Link>
                                     </div>
                                 </div>
                             </div>

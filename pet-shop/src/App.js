@@ -12,14 +12,18 @@ import { PricingPlan } from './components/PricingPlan/PricingPlan';
 import { Team } from './components/Team/Team';
 import { Blog } from './components/Blog/Blog';
 import { Footer } from './components/Footer';
+import { Details } from './components/Details/Details';
+import { Contact } from './components/Contact/Contact';
 
 function App() {
+
+    
     return (
         <div>
             <Topbar />
             <Router>
+                <Navigation />
                 <Routes>
-                    <Route path="/" element={<Navigation />} />
                     <Route path="/" element={<Hero />} />
 
                     {/* <!-- Video Modal Start --> */}
@@ -49,6 +53,8 @@ function App() {
                     <Route path="/product" element={<Products />} />
                     <Route path="/price" element={<PricingPlan />} />
                     <Route path="/team" element={<Team />} />
+                    <Route path="/detail" element={<Details />} />
+                    <Route path="/contact" element={<Contact onSubmit={onSubmit}/>} />
 
                     {/* <!-- Testimonial Start --> */}
                     {/* <div className="container-fluid bg-testimonial py-5" style="margin: 45px 0;">
@@ -88,12 +94,12 @@ function App() {
                     {/* <!-- Testimonial End --> */}
 
                     <Route path="/blog" element={<Blog />} />
-                    <Route path="/" element={<Footer />} />
 
                     {/* <!-- Back to Top --> */}
                     {/* <Link to="#" className="btn btn-primary py-3 fs-4 back-to-top"><i className="bi bi-arrow-up"></i></Link> */}
 
                 </Routes>
+                <Footer />
             </Router>
 
             {/* <!-- JavaScript Libraries --> */}
