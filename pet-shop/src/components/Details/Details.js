@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import { Comment } from "./Comment/Comment";
 import { Post } from "./Post/Post";
-
+import { defaultUcommenter } from "../../Constants/Constants";
 
 export const Details = () => {
+
     return (
         <div className="container py-5">
             <div className="row g-5">
@@ -36,10 +37,14 @@ export const Details = () => {
 
                     {/* Comment List Start  */}
                     <div className="mb-5">
+                        {/* TODO: Connect with server and get all comments, then do 
+                                if-else statement comments.count < 3 
+                                ? render all available comments,
+                                 else render top 3 of them */}
                         <h3 className="text-uppercase border-start border-5 border-primary ps-3 mb-4">3 Comments</h3>
-                        <Comment />
-                        <Comment />
-                        <Comment />
+                        <Comment user={defaultUcommenter[0]} />
+                        <Comment user={defaultUcommenter[1]} />
+                        <Comment user={defaultUcommenter[2]} />
                     </div>
                     {/* Comment List End  */}
 
@@ -49,13 +54,13 @@ export const Details = () => {
                         <form>
                             <div className="row g-3">
                                 <div className="col-12 col-sm-6">
-                                    <input type="text" className="form-control bg-white border-0" placeholder="Your Name" style={{"height": "55px"}} />
+                                    <input type="text" className="form-control bg-white border-0" placeholder="Your Name" style={{ "height": "55px" }} />
                                 </div>
                                 <div className="col-12 col-sm-6">
-                                    <input type="email" className="form-control bg-white border-0" placeholder="Your Email" style={{"height": "55px"}} />
+                                    <input type="email" className="form-control bg-white border-0" placeholder="Your Email" style={{ "height": "55px" }} />
                                 </div>
                                 <div className="col-12">
-                                    <input type="text" className="form-control bg-white border-0" placeholder="Website" style={{"height": "55px"}} />
+                                    <input type="text" className="form-control bg-white border-0" placeholder="Website" style={{ "height": "55px" }} />
                                 </div>
                                 <div className="col-12">
                                     <textarea className="form-control bg-white border-0" rows="5" placeholder="Comment"></textarea>

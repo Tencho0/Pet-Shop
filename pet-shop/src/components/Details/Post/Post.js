@@ -10,3 +10,13 @@ export const Post = () => {
         </div>
     );
 }
+
+
+// export const Post = ({post}) => {
+//     return (
+//         <div className="d-flex overflow-hidden mb-3">
+//             <img className="img-fluid" src={post.imageUrl} style={{"width": "100px", "height": "100px", "objectFit": "cover"}} alt="" />
+//             <Link to={post.url} className="h5 d-flex align-items-center bg-light px-3 mb-0">{post.title}</Link>
+//         </div>
+//     );
+// }
