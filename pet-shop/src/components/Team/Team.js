@@ -1,5 +1,5 @@
-
 import { Member } from "./Member/Member";
+import { defaultTeamMembers } from "../../Constants/Constants";
 
 export const Team = () => {
     return (
@@ -9,12 +9,10 @@ export const Team = () => {
                     <h6 className="text-primary text-uppercase">Team Members</h6>
                     <h1 className="display-5 text-uppercase mb-0">Qualified Pets Care Professionals</h1>
                 </div>
-                <div className="owl-carousel team-carousel position-relative" style={{ "paddingRight": "25px" }}>
-                    <Member />
-                    <Member />
-                    <Member />
-                    <Member />
-                    <Member />
+               <div className="owlCarousel teamCarousel positionRelative" style={{ "paddingRight": "25px" }}>
+                    <Member user={defaultTeamMembers[0]}/>
+                    <Member user={defaultTeamMembers[1]}/>
+                    <Member user={defaultTeamMembers[2]}/>
                 </div>
             </div>
         </div>
