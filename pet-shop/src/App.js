@@ -14,6 +14,8 @@ import { Blog } from './components/Blog/Blog';
 import { Footer } from './components/Footer';
 import { Details } from './components/Details/Details';
 import { Contact } from './components/Contact/Contact';
+import { defaultUcommenter } from './Constants/Constants';
+import uuid from 'react-uuid';
 
 function App() {
     // const navigate = useNavigate();
@@ -22,6 +24,24 @@ function App() {
         e.preventDefault();
 
         // navigate('/');
+    }
+
+    function onAddCommentHandler(e) {
+        e.preventDefault();
+
+        const newDate = new Date()
+        const date = `${newDate.getDay()} ${newDate.getMonth()} ${newDate.getFullYear()}`
+
+        //const gameData = Object.fromEntries(new FormData(e.target))
+        let [nameElement, emailElement, websiteElement, commentElement] = [...e.target];
+        defaultUcommenter.push({
+            "FullName": `${nameElement.value}`,
+            "date": { date },
+            "comment": `${commentElement.value}`,
+            "imageUrl": `${websiteElement.value}`,
+            "email": `${emailElement.value}`,
+            "_Id": `${uuid()}`
+        });
     }
 
     return (
@@ -58,7 +78,7 @@ function App() {
                     <Route path="/product" element={<Products />} />
                     <Route path="/price" element={<PricingPlan />} />
                     <Route path="/team" element={<Team />} />
-                    <Route path="/detail" element={<Details />} />
+                    <Route path="/detail" element={<Details onAddCommentHandler={onAddCommentHandler} />} />
                     <Route path="/contact" element={<Contact onSubmit={onContactFormSubmitHandler} />} />
 
                     {/* <!-- Testimonial Start --> */}

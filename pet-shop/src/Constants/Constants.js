@@ -1,23 +1,28 @@
-//TODO: Remove hardcoded data, and implement server
 
+import uuid from 'react-uuid';
+
+//TODO: Remove hardcoded data, and implement server
 export const defaultUcommenter = [];
 defaultUcommenter.push({
     "FullName": "Ivan Ivanov",
     "date": "01 June 2022",
     "comment": "I am impressed with the customer service!",
-    "imageUrl": "https://media.istockphoto.com/id/1270067126/photo/smiling-indian-man-looking-at-camera.jpg?s=612x612&w=0&k=20&c=ovIQ5GPurLd3mOUj82jB9v-bjGZ8updgy1ACaHMeEC0="
+    "imageUrl": "https://media.istockphoto.com/id/1270067126/photo/smiling-indian-man-looking-at-camera.jpg?s=612x612&w=0&k=20&c=ovIQ5GPurLd3mOUj82jB9v-bjGZ8updgy1ACaHMeEC0=",
+    "_Id": `${uuid()}`
 });
 defaultUcommenter.push({
     "FullName": "Dimitur Georgiev",
     "date": "11 July 2012",
     "comment": "Dogs are very obedient!",
-    "imageUrl": "https://www.simplilearn.com/ice9/free_resources_article_thumb/tester-or-developer-what-suits-you-the-most.jpg"
+    "imageUrl": "https://www.simplilearn.com/ice9/free_resources_article_thumb/tester-or-developer-what-suits-you-the-most.jpg",
+    "_Id": `${uuid()}`
 });
 defaultUcommenter.push({
     "FullName": "Georgi Dimitrov",
     "date": "24 August 2006",
     "comment": "I am impressed with the customer service",
-    "imageUrl": "https://cdn-icons-png.flaticon.com/512/6840/6840478.png"
+    "imageUrl": "https://cdn-icons-png.flaticon.com/512/6840/6840478.png",
+    "_Id": `${uuid()}`
 });
 
 
@@ -47,7 +52,7 @@ defaultArticles.push({
     "date": "01 June 2022",
     "description": "Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor",
     "imageUrl": "https://cdn.britannica.com/84/232784-050-1769B477/Siberian-Husky-dog.jpg",
-    "_Id": "1"
+    "_Id": `${uuid()}`
 });
 defaultArticles.push({
     "breed": "German Shepherd",
@@ -55,7 +60,7 @@ defaultArticles.push({
     "date": "01 June 2022",
     "description": "Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor",
     "imageUrl": "https://www.akc.org/wp-content/uploads/2016/06/German-Shepherd-Dog-laying-down-in-the-backyard-500x487.jpeg",
-    "_Id": "2"
+    "_Id": `${uuid()}`
 });
 defaultArticles.push({
     "breed": "German Shepherd",
@@ -63,7 +68,7 @@ defaultArticles.push({
     "date": "01 June 2022",
     "description": "Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor",
     "imageUrl": "https://www.akc.org/wp-content/uploads/2016/06/German-Shepherd-Dog-laying-down-in-the-backyard-500x487.jpeg",
-    "_Id": "3"
+    "_Id": `${uuid()}`
 });
 defaultArticles.push({
     "breed": "Cool Dog",
@@ -71,7 +76,7 @@ defaultArticles.push({
     "date": "21 January 2017",
     "description": "Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor",
     "imageUrl": "img/blog-1.jpg",
-    "_Id": "4"
+    "_Id": `${uuid()}`
 });
 defaultArticles.push({
     "breed": "Cool Dog",
@@ -79,5 +84,5 @@ defaultArticles.push({
     "date": "21 January 2014",
     "description": "Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor",
     "imageUrl": "img/blog-2.jpg",
-    "_Id": "5"
+    "_Id": `${uuid()}`
 });

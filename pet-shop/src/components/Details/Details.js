@@ -3,7 +3,7 @@ import { Comment } from "./Comment/Comment";
 import { Post } from "./Post/Post";
 import { defaultUcommenter } from "../../Constants/Constants";
 
-export const Details = () => {
+export const Details = ({onAddCommentHandler}) => {
 
     return (
         <div className="container py-5">
@@ -42,16 +42,18 @@ export const Details = () => {
                                 ? render all available comments,
                                  else render top 3 of them */}
                         <h3 className="text-uppercase border-start border-5 border-primary ps-3 mb-4">3 Comments</h3>
-                        <Comment user={defaultUcommenter[0]} />
-                        <Comment user={defaultUcommenter[1]} />
-                        <Comment user={defaultUcommenter[2]} />
+                        {
+                            defaultUcommenter.length > 0
+                                ? defaultUcommenter.map(x => <Comment key={x._Id} user={x} />)
+                                : ''
+                        }
                     </div>
                     {/* Comment List End  */}
 
                     {/* Comment Form Start  */}
                     <div className="bg-light rounded p-5">
                         <h3 className="text-uppercase border-start border-5 border-primary ps-3 mb-4">Leave a comment</h3>
-                        <form>
+                        <form onSubmit={onAddCommentHandler}>
                             <div className="row g-3">
                                 <div className="col-12 col-sm-6">
                                     <input type="text" className="form-control bg-white border-0" placeholder="Your Name" style={{ "height": "55px" }} />
