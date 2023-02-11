@@ -37,3 +37,47 @@ defaultTeamMembers.push({
     "Designation": "vet",
     "imageUrl": "https://bmorehumane.org/wp-content/uploads/2020/06/wellness-vet-with-lab-1024x768.jpg"
 });
+
+
+
+export const defaultArticles = [];
+defaultArticles.push({
+    "breed": "Husky",
+    "title": "Siberian Husky Dog Breed - Facts and Traits ",
+    "date": "01 June 2022",
+    "description": "Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor",
+    "imageUrl": "https://cdn.britannica.com/84/232784-050-1769B477/Siberian-Husky-dog.jpg",
+    "_Id": "1"
+});
+defaultArticles.push({
+    "breed": "German Shepherd",
+    "title": "German Shepherd Dog Breed - Facts and Traits ",
+    "date": "01 June 2022",
+    "description": "Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor",
+    "imageUrl": "https://www.akc.org/wp-content/uploads/2016/06/German-Shepherd-Dog-laying-down-in-the-backyard-500x487.jpeg",
+    "_Id": "2"
+});
+defaultArticles.push({
+    "breed": "German Shepherd",
+    "title": "German Shepherd Dog Breed - Facts and Traits ",
+    "date": "01 June 2022",
+    "description": "Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor",
+    "imageUrl": "https://www.akc.org/wp-content/uploads/2016/06/German-Shepherd-Dog-laying-down-in-the-backyard-500x487.jpeg",
+    "_Id": "3"
+});
+defaultArticles.push({
+    "breed": "Cool Dog",
+    "title": "Cool dog Breed - Facts and Traits ",
+    "date": "21 January 2017",
+    "description": "Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor",
+    "imageUrl": "img/blog-1.jpg",
+    "_Id": "4"
+});
+defaultArticles.push({
+    "breed": "Cool Dog",
+    "title": "Cool dog Breed - Facts and Traits ",
+    "date": "21 January 2014",
+    "description": "Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor",
+    "imageUrl": "img/blog-2.jpg",
+    "_Id": "5"
+});
