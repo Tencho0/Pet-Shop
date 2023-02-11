@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import { Comment } from "./Comment/Comment";
 import { Post } from "./Post/Post";
-import { defaultUcommenter } from "../../Constants/Constants";
 
-export const Details = ({onAddCommentHandler}) => {
+export const Details = ({ comments, onAddCommentHandler }) => {
 
     return (
         <div className="container py-5">
@@ -43,8 +42,8 @@ export const Details = ({onAddCommentHandler}) => {
                                  else render top 3 of them */}
                         <h3 className="text-uppercase border-start border-5 border-primary ps-3 mb-4">3 Comments</h3>
                         {
-                            defaultUcommenter.length > 0
-                                ? defaultUcommenter.map(x => <Comment key={x._Id} user={x} />)
+                            comments
+                                ? Object.keys(comments).map(x => <Comment key={x._Id} user={x} />)
                                 : ''
                         }
                     </div>

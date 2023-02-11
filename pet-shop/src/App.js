@@ -16,8 +16,18 @@ import { Details } from './components/Details/Details';
 import { Contact } from './components/Contact/Contact';
 import { defaultUcommenter } from './Constants/Constants';
 import uuid from 'react-uuid';
+import { useEffect, useState } from 'react';
 
 function App() {
+    const [comments, setComments] = useState();
+
+    useEffect(() => {
+        defaultUcommenter.map(x => setComments(state => [
+            ...state,
+            x
+        ]));
+    }, [])
+
     // const navigate = useNavigate();
 
     function onContactFormSubmitHandler(e) {
@@ -34,14 +44,20 @@ function App() {
 
         //const gameData = Object.fromEntries(new FormData(e.target))
         let [nameElement, emailElement, websiteElement, commentElement] = [...e.target];
-        defaultUcommenter.push({
+        const newCommenter = {
             "FullName": `${nameElement.value}`,
             "date": { date },
             "comment": `${commentElement.value}`,
             "imageUrl": `${websiteElement.value}`,
             "email": `${emailElement.value}`,
             "_Id": `${uuid()}`
-        });
+        };
+
+        defaultUcommenter.push(newCommenter);
+        setComments(state => [
+            ...state,
+            newCommenter
+        ])
     }
 
     return (
@@ -78,7 +94,7 @@ function App() {
                     <Route path="/product" element={<Products />} />
                     <Route path="/price" element={<PricingPlan />} />
                     <Route path="/team" element={<Team />} />
-                    <Route path="/detail" element={<Details onAddCommentHandler={onAddCommentHandler} />} />
+                    <Route path="/detail" element={<Details comments={comments} onAddCommentHandler={onAddCommentHandler} />} />
                     <Route path="/contact" element={<Contact onSubmit={onContactFormSubmitHandler} />} />
 
                     {/* <!-- Testimonial Start --> */}
