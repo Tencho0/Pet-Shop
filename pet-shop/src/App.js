@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './App.css';
-import { Hero } from './components/Hero/Hero';
+import { Home } from './components/Home/Home';
 import { Navigation } from './components/Navigation/Navigation';
 import { Topbar } from './components/Topbar/Topbar';
 import { About } from './components/About/About';
@@ -16,15 +16,21 @@ import { Details } from './components/Details/Details';
 import { Contact } from './components/Contact/Contact';
 
 function App() {
+    // const navigate = useNavigate();
 
-    
+    function onContactFormSubmitHandler(e) {
+        e.preventDefault();
+
+        // navigate('/');
+    }
+
     return (
         <div>
             <Topbar />
             <Router>
                 <Navigation />
                 <Routes>
-                    <Route path="/" element={<Hero />} />
+                    <Route path="/" element={<Home />} />
 
                     {/* <!-- Video Modal Start --> */}
                     {/* <div className="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -46,7 +52,6 @@ function App() {
             </div> */}
                     {/* <!-- Video Modal End --> */}
 
-                    <Route path='/index' />
                     <Route path="/about" element={<About />} />
                     <Route path="/service" element={<ServicesComponent />} />
                     <Route path="/offer" element={<Offer />} />
@@ -54,7 +59,7 @@ function App() {
                     <Route path="/price" element={<PricingPlan />} />
                     <Route path="/team" element={<Team />} />
                     <Route path="/detail" element={<Details />} />
-                    <Route path="/contact" element={<Contact onSubmit={onSubmit}/>} />
+                    <Route path="/contact" element={<Contact onSubmit={onContactFormSubmitHandler} />} />
 
                     {/* <!-- Testimonial Start --> */}
                     {/* <div className="container-fluid bg-testimonial py-5" style="margin: 45px 0;">

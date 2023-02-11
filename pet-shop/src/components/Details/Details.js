@@ -84,11 +84,11 @@ export const Details = () => {
                     <div className="mb-5">
                         <h3 className="text-uppercase border-start border-5 border-primary ps-3 mb-4">Categories</h3>
                         <div className="d-flex flex-column justify-content-start">
-                            <Link to="h5 bg-light py-2 px-3 mb-2" href="#"><i className="bi bi-arrow-right me-2"></i>Web Design</Link>
-                            <Link to="h5 bg-light py-2 px-3 mb-2" href="#"><i className="bi bi-arrow-right me-2"></i>Web Development</Link>
-                            <Link to="h5 bg-light py-2 px-3 mb-2" href="#"><i className="bi bi-arrow-right me-2"></i>Web Development</Link>
-                            <Link to="h5 bg-light py-2 px-3 mb-2" href="#"><i className="bi bi-arrow-right me-2"></i>Keyword Research</Link>
-                            <Link to="h5 bg-light py-2 px-3 mb-2" href="#"><i className="bi bi-arrow-right me-2"></i>Email Marketing</Link>
+                            <Link className="h5 bg-light py-2 px-3 mb-2" to="#"><i className="bi bi-arrow-right me-2"></i>Web Design</Link>
+                            <Link className="h5 bg-light py-2 px-3 mb-2" to="#"><i className="bi bi-arrow-right me-2"></i>Web Development</Link>
+                            <Link className="h5 bg-light py-2 px-3 mb-2" to="#"><i className="bi bi-arrow-right me-2"></i>Web Development</Link>
+                            <Link className="h5 bg-light py-2 px-3 mb-2" to="#"><i className="bi bi-arrow-right me-2"></i>Keyword Research</Link>
+                            <Link className="h5 bg-light py-2 px-3 mb-2" to="#"><i className="bi bi-arrow-right me-2"></i>Email Marketing</Link>
                         </div>
                     </div>
                     {/* Category End  */}
@@ -114,18 +114,18 @@ export const Details = () => {
                     <div className="mb-5">
                         <h3 className="text-uppercase border-start border-5 border-primary ps-3 mb-4">Tag Cloud</h3>
                         <div className="d-flex flex-wrap m-n1">
-                            <Link to="" className="btn btn-primary m-1">Design</Link>
-                            <Link to="" className="btn btn-primary m-1">Development</Link>
-                            <Link to="" className="btn btn-primary m-1">Marketing</Link>
-                            <Link to="" className="btn btn-primary m-1">SEO</Link>
-                            <Link to="" className="btn btn-primary m-1">Writing</Link>
-                            <Link to="" className="btn btn-primary m-1">Consulting</Link>
-                            <Link to="" className="btn btn-primary m-1">Design</Link>
-                            <Link to="" className="btn btn-primary m-1">Development</Link>
-                            <Link to="" className="btn btn-primary m-1">Marketing</Link>
-                            <Link to="" className="btn btn-primary m-1">SEO</Link>
-                            <Link to="" className="btn btn-primary m-1">Writing</Link>
-                            <Link to="" className="btn btn-primary m-1">Consulting</Link>
+                            <Link to="#" className="btn btn-primary m-1">Design</Link>
+                            <Link to="#" className="btn btn-primary m-1">Development</Link>
+                            <Link to="#" className="btn btn-primary m-1">Marketing</Link>
+                            <Link to="#" className="btn btn-primary m-1">SEO</Link>
+                            <Link to="#" className="btn btn-primary m-1">Writing</Link>
+                            <Link to="#" className="btn btn-primary m-1">Consulting</Link>
+                            <Link to="#" className="btn btn-primary m-1">Design</Link>
+                            <Link to="#" className="btn btn-primary m-1">Development</Link>
+                            <Link to="#" className="btn btn-primary m-1">Marketing</Link>
+                            <Link to="#" className="btn btn-primary m-1">SEO</Link>
+                            <Link to="#" className="btn btn-primary m-1">Writing</Link>
+                            <Link to="#" className="btn btn-primary m-1">Consulting</Link>
                         </div>
                     </div>
                     {/* Tags End  */}
