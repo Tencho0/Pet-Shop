@@ -63,11 +63,11 @@ defaultArticles.push({
     "_Id": `${uuid()}`
 });
 defaultArticles.push({
-    "breed": "German Shepherd",
-    "title": "German Shepherd Dog Breed - Facts and Traits ",
-    "date": "01 June 2022",
+    "breed": "Pitbull",
+    "title": "Pitbull Dog Breed - Facts and Traits ",
+    "date": "25 September 2017",
     "description": "Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor",
-    "imageUrl": "https://www.akc.org/wp-content/uploads/2016/06/German-Shepherd-Dog-laying-down-in-the-backyard-500x487.jpeg",
+    "imageUrl": "https://cdn-fastly.petguide.com/media/2022/02/16/8247781/pitbull.jpg?size=720x845&nocrop=1",
     "_Id": `${uuid()}`
 });
 defaultArticles.push({

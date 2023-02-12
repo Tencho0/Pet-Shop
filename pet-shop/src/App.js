@@ -19,7 +19,7 @@ import uuid from 'react-uuid';
 import { useEffect, useState } from 'react';
 
 function App() {
-    const [comments, setComments] = useState();
+    const [comments, setComments] = useState([]);
 
     useEffect(() => {
         defaultUcommenter.map(x => setComments(state => [
@@ -46,7 +46,7 @@ function App() {
         let [nameElement, emailElement, websiteElement, commentElement] = [...e.target];
         const newCommenter = {
             "FullName": `${nameElement.value}`,
-            "date": { date },
+            "date": `${date}`,
             "comment": `${commentElement.value}`,
             "imageUrl": `${websiteElement.value}`,
             "email": `${emailElement.value}`,
@@ -58,6 +58,11 @@ function App() {
             ...state,
             newCommenter
         ])
+
+        e.target[0].value = '';
+        e.target[1].value = '';
+        e.target[2].value = '';
+        e.target[3].value = '';
     }
 
     return (

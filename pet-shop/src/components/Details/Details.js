@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Comment } from "./Comment/Comment";
 import { Post } from "./Post/Post";
+import { defaultArticles } from "../../Constants/Constants";
 
 export const Details = ({ comments, onAddCommentHandler }) => {
 
@@ -43,8 +44,9 @@ export const Details = ({ comments, onAddCommentHandler }) => {
                         <h3 className="text-uppercase border-start border-5 border-primary ps-3 mb-4">3 Comments</h3>
                         {
                             comments
-                                ? Object.keys(comments).map(x => <Comment key={x._Id} user={x} />)
+                                ? comments.map(x => <Comment key={x._Id} user={x} />)
                                 : ''
+                            // ? Object.keys(comments).map(x => <Comment key={x._Id} user={x} />)
                         }
                     </div>
                     {/* Comment List End  */}
@@ -102,11 +104,11 @@ export const Details = ({ comments, onAddCommentHandler }) => {
                     {/* Recent Post Start  */}
                     <div className="mb-5">
                         <h3 className="text-uppercase border-start border-5 border-primary ps-3 mb-4">Recent Post</h3>
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
+                        {
+                            defaultArticles.length > 0
+                                ? defaultArticles.map(x => <Post key={x._Id} article={x} />)
+                                : ''
+                        }
                     </div>
                     {/* Recent Post End  */}
 
